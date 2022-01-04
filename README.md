@@ -15,11 +15,15 @@ This repo mixes code from repos mentioned in the [references](#References) secti
 * Maven 3+
 * (Opt.) IntelliJ or Eclipse
 
+## Setup
+
 ### Install LDAP Ref Lib locally
 
 * Clone https://github.com/mbechler/marshalsec
 * Uncomment the `<artifactId>maven-assembly-plugin</artifactId>` in `pom.xml`
 * Install library to local Maven Repo with `mvn clean install`
+
+## Run Demo
 
 ### Start Web Application with vulnerable Log4j
 
@@ -52,3 +56,9 @@ This repo mixes code from repos mentioned in the [references](#References) secti
   <version>0.0.3-SNAPSHOT</version>
 </dependency>
 ```
+
+### It does not work
+
+* Did you add `-Dcom.sun.jndi.ldap.object.trustURLCodebase=true` for newer Java SDKs?
+* Did you install the *marshalsec* JAR in your local Maven repo?
+* Did you remove/uncomment the assembly Maven plugin when building *marshalsec* JAR?
