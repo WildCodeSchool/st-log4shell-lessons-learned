@@ -27,6 +27,8 @@ This repo mixes code from repos mentioned in the [references](#References) secti
 
 ### Start Web Application with vulnerable Log4j
 
+* In Folder *vulnerable-spring-boot-web-app* build with 
+
 * With Java 11 or Java8u191+ (for other Java SDKs see [here](https://www.geekyhacker.com/2021/12/11/three-ways-to-patch-log4shell-cve-2021-44228-vulnerability/)), in Run Configuration, Add VM option `-Dcom.sun.jndi.ldap.object.trustURLCodebase=true`
 
 ### Start Exploit & LDAP Servers
