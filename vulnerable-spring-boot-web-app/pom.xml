@@ -46,11 +46,12 @@
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
                 <version>6.5.2</version>
-                <!--
+
                 <configuration>
-                    <failBuildOnCVSS>8</failBuildOnCVSS>
+                    <!--<failBuildOnCVSS>8</failBuildOnCVSS>-->
+                    <format>XML</format>
                 </configuration>
-                -->
+
                 <executions>
                     <execution>
                         <goals>
