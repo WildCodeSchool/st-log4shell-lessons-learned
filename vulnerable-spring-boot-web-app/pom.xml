@@ -49,7 +49,7 @@
 
                 <configuration>
                     <!--<failBuildOnCVSS>8</failBuildOnCVSS>-->
-                    <format>XML</format>
+                    <formats>HTML,XML</formats>
                 </configuration>
 
                 <executions>
